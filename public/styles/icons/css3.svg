@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46" height="51" stroke="#000"
+  stroke-linecap="round" stroke-linejoin="round" fill="#fff" fill-rule="evenodd"><a target="_blank"
+    xlink:href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+    <title>CSS - Cascade Style Sheet, go here to know more about.</title>
+    <g stroke="none">
+      <path d="M45 0H0l3.75 45.1154L22.5 51l18.75-5.8846L45 0" fill="#1572b6" />
+      <path
+        d="M38.8043 29.4231l.3261-3.9231.4892-5.8846.4891-5.8846.4891-5.8846.3261-3.9231H22.5v43.1538l11.384-3.5728 3.8504-1.2084.5022-6.0422.5023-6.0423z"
+        fill="#33a9dc" />
+      <path
+        d="M18.6999 39.9996l-1.9252-.6042-6.1607-1.9335-.5023-6.0423-.1659-1.9965h6l.3266 3.9301 1.9253.6042 4.3024 1.3503v5.8846zM8.6413 13.7308h6 1.875H22.5V7.8462h-6.4728-1.875-6z"
+        fill="#ebebeb" />
+      <path
+        d="M22.5 35.3077l6.2277-1.9545.3266-3.9301.3261-3.9231H22.5v-5.8846h7.3696l.4891-5.8846H22.5V7.8462h8.3478 6l-.4891 5.8846-.4891 5.8846-.4892 5.8846-.3261 3.9231-.1659 1.9966-.5022 6.0422-6.1608 1.9335-5.7254 1.797v-5.8847z" />
+      <path d="M22.5001 25.5h-5.0054l-.4892-5.8846h5.4946z" fill="#ebebeb" />
+    </g>
+  </a></svg>
