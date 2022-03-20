@@ -6,13 +6,13 @@
     ]
   },
   "hosting": {
+    "site": "yurisilva",
     "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**",
-      "**/functions/**",
-      "**.vscode**"
+      "**/functions/**"
     ],
     "rewrites": [
       {
