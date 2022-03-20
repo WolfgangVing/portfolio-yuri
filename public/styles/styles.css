@@ -503,23 +503,23 @@ section {
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .html {
-  width: 70%;
+  width: 65%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .js {
-  width: 80%;
+  width: 75%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .css {
-  width: 60%;
+  width: 50%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .node {
-  width: 60%;
+  width: 50%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .express {
-  width: 50%;
+  width: 40%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .scss {
