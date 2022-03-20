@@ -55,8 +55,8 @@ For the Contact Form, I had a recent experience using Elasticemail and SMTPjs ma
       - [x] Timeline
       - [ ] Describe my soft skills
     
-    - [ ] My Portfolio
-      -[ ] Probably nothing goes here for the time being.
+    - [ ] My Portfolio.
+      - [ ] Probably nothing goes here for the time being.
       
     - [ ] Contact Me
 
