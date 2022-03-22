@@ -12,7 +12,9 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**",
-      "**/functions/**"
+      "**/functions/**",
+      "**/.vscode**", 
+      "comandos-IMPORTANTES.txt"
     ],
     "rewrites": [
       {
