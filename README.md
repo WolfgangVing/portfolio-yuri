@@ -51,12 +51,11 @@ For the Contact Form, I had a recent experience using Elasticemail and SMTPjs ma
 
     - [ ] About Me
       - [ ] Write Something about myself
+      - [ ] Describe my soft skills
       - [x] Skills
       - [x] Timeline
-      - [ ] Describe my soft skills
     
-    - [ ] My Portfolio.
-      - [ ] Probably nothing goes here for the time being.
+    - [x] My Portfolio.
       
     - [ ] Contact Me
 
@@ -65,8 +64,8 @@ For the Contact Form, I had a recent experience using Elasticemail and SMTPjs ma
   - [ ] UX
     - [ ] Responsive
     - [ ] English and Portuguese language supporte
-    - [ ] Making making people able to see my badges ate Credly or/and my Drive folder with the certificates as PDF.
-  
+    - [ ] Making people able to see my badges ate Credly or/and my Drive folder with the certificates as PDF.
+    - [ ] Animate the transition in Projects to a Hexagon expanding from the center.
 
 
 ---
