@@ -352,6 +352,8 @@ section {
         #sass {
           background-repeat: no-repeat;
           background-image: url(icons/sass-icon.svg);
+          background-position: center;
+          background-size: contain;
           width: 55px;
           height: 45px;
         }
@@ -536,7 +538,8 @@ section {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+        gap: 2px;
+
         .icon {
           background-color: var(--russian-violet);
           border-radius: 50%;
@@ -546,14 +549,15 @@ section {
           display: flex;
           justify-content: center;
           align-items: center;
-          margin: 0 1rem;
+          margin: 0 .6rem;
 
           cursor: pointer;
           transition: var(--trasition-all);
+          
           i {
             font-size: 1.5rem;
             color: var(--color-white);
-            margin: 0 1rem;
+            
           }
 
           &:hover {
@@ -562,11 +566,22 @@ section {
               color: var(--russian-violet)
             }
           }
+
+          .icon-img {
+            background-repeat: no-repeat;
+            background-image: url(icons/replit-icon.svg);
+            background-position: center;
+            background-size: contain;
+            width: 1.5rem;
+            height: 1.5rem;
+            color: var(--color-white);
+          }
         }
       }
     }
   }
 }
+
 .portfolio-item:hover .hover-item {
   opacity: 1;
   transform: scale(1);
