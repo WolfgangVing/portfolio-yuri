@@ -10,6 +10,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/421dc5ad43.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">(function() { emailjs.init("2K2dRCSOcLwbt5KpF");})();</script>
+  <script type="text/javascript">
+    window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // generate a five digit number for the contact_number variable
+            this.contact_number.value = Math.random() * 100000 | 0;
+            // these IDs from the previous steps
+            emailjs.sendForm("service_og59fzj", "template_3s5qr6s", this)
+                .then(function() {
+                    console.log('SUCCESS!');
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+        });
+    }
+</script>
 </head>
 <body class="main-content">
   <header class="section sec1 header active" id="home">
@@ -305,22 +323,23 @@
             </div>
           </div>
           <div class="right-contact">
-            <form action="" class="contact-form">
+            <form onsubmit="" class="contact-form" id="contact-form">
+                <input type="hidden" name="contact_number">
                 <div class="input-controls i-c-2">
-                  <input type="text" name="" id="" required placeholder="Name">
-                  <input type="email" name="" id="email-cont" required placeholder="Your Email">
+                  <input type="text" name="name" id="name" required placeholder="Name">
+                  <input type="email" name="email" id="email-cont" required placeholder="Your Email">
                 </div>
                 <div class="input-controls">
-                  <input type="text" name="" id="" required placeholder="Subject">
+                  <input type="text" name="subject" id="subject" required placeholder="Subject">
                 </div>
                 <div class="input-controls">
-                  <textarea name="" id="" cols="15" rows="8" required placeholder="Message here..."></textarea>
+                  <textarea name="message" id="message" cols="15" rows="8" required placeholder="Message here..."></textarea>
                 </div>
                 <div class="submit-btn">
-                  <a href="" class="main-btn">
-                    <span class="btn-text">Download CV</span>
-                    <span class="btn-icon"><i class="fas fa-download"></i></span>
-                  </a>
+                  <button type="submit" class="main-btn send">
+                    <span class="btn-text">Send</span>
+                    <span class="btn-icon"><i class="fa-solid fa-paper-plane"></i></span>
+                  </button>
                 </div>
             </form>
           </div>
@@ -342,6 +361,9 @@
     <div class="control control-5 " data-id="contact">
       <i class="fa-solid fa-address-card"></i>
     </div>
+  </div>
+  <div class="theme-btn" theme-btn>
+    <i class="fa-solid fa-circle-half-stroke"></i>
   </div>
   <script src="app.js"></script>
 </body>

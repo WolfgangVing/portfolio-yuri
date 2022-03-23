@@ -12,13 +12,13 @@ function pageTransition() {
       this.className += " active-btn";
     })
   }
-
+  
   //Sections Active
   allSections.addEventListener('click', (e) =>{
     const id = e.target.dataset.id
     if(id){
       //remove selected from others btns
-      sectBtns.forEach(btn => {
+      sectBtn.forEach(btn => {
         btn.classList.remove('active');
       })
       e.target.classList.add('active');
@@ -32,6 +32,35 @@ function pageTransition() {
       element.classList.add('active');
     }
   })
+
+  // Theme change
+  //adding light-mode to body classList
+  document.querySelector('.theme-btn').addEventListener('click', e => {
+    document.body.classList.toggle('light-mode')
+  })
 }
 
 pageTransition()
+
+// Send email SMTPjs service from stmpjs.com
+
+// const nome = document.getElementById("name").value
+// const email = document.getElementById('email-cont').value
+// const subject = document.getElementById("subject").value
+// const msg = document.getElementById("message").value
+
+
+
+// document.getElementById('formsend').onsubmit = event => {
+//   event.preventDefault()
+//   Email.send({
+//     SecureToken : "ef2544bc-6543-4e97-8ece-653ba0dc5a97",
+//     To: "ycss.v1@gmail.com",
+//     from: email,
+//     Subject: subject,
+//     Body: `Name: ${nome}\nEmail: ${email}\nContent: ${msg}`
+//   }).then (
+//     message => alert(message)
+//   ).catch(e => alert(e))
+//   reset()
+// }

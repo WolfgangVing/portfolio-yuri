@@ -1,0 +1,53 @@
+
+@media screen and (max-width: 600px){
+  header {
+    padding: 0;
+  }
+  .header-content {
+
+    .left-header {
+      .h-shape{
+        display: none;
+      }
+
+      .image {
+        margin: 0 auto;
+        width: 90%;
+      }
+    }
+    .right-header {
+      padding: 0;
+      grid-row: 1;
+      width: 90%;
+      margin: 0 auto;
+
+      .name {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  .theme-btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .header-content {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  .controlls {
+    top: auto;
+    bottom: 0;
+    flex-direction: initial;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey5);
+
+    .control {
+      margin: 1rem .3rem;
+    }
+  }
+}
