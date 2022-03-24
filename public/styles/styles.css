@@ -490,21 +490,24 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: .7rem;
+  width: 50px;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .prog-text {
   color: var(--color-grey2);
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress {
+.about-stats .progress-bars .progress-bar .progress-con .progress-tier {
   width: 100%;
   height: .45rem;
   background-color: var(--color-grey4);
-  margin-left: 1rem;
+  margin-left: .4rem;
   position: relative;
+  font-size: 12px;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress span {
+.about-stats .progress-bars .progress-bar .progress-con .progress-tier span {
   position: absolute;
   top: 0;
   left: 0;
@@ -512,35 +515,26 @@ section {
   background-color: var(--color-secondary);
   -webkit-transition: var(--trasition-all);
   transition: var(--trasition-all);
-  width: 60%;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .html {
-  width: 65%;
+.about-stats .progress-bars .progress-bar .progress-con .progress-tier .newbie {
+  width: 100%;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .js {
-  width: 75%;
+.about-stats .progress-bars .progress-bar .progress-con .progress-tier .beginner {
+  width: 100%;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .css {
-  width: 50%;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .progress .node {
-  width: 50%;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .progress .express {
+.about-stats .progress-bars .progress-bar .progress-con .progress-tier .intermediate {
   width: 40%;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .scss {
-  width: 10%;
+.about-stats .progress-bars .progress-bar .progress-con .progress-tier .advanced {
+  width: 0%;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .firebase {
-  width: 40%;
+.about-stats .progress-bars .progress-bar .progress-con .progress-tier .technoking {
+  width: 0%;
 }
 
 .stat-title {
