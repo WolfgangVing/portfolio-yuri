@@ -227,28 +227,14 @@ section {
 
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
-  height: 90%;
-  width: 68%;
-  margin-left: 4rem;
-  background-color: var(--color-black);
-  -webkit-transition: var(--trasition-all);
-  transition: var(--trasition-all);
-}
-
-.header-content .left-header .image img {
-  width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 100%;
+  margin-left: .3rem;
+  background-image: url(../img/boneco_yuri.svg);
   -webkit-transition: var(--trasition-all);
   transition: var(--trasition-all);
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-
-.header-content .left-header .image img:hover {
-  -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .header-content .right-header {
@@ -383,17 +369,26 @@ section {
   gap: 2rem;
 }
 
-.about-stats .progress-bars .progress-bar {
+.about-stats .progress-bars .techs-left-cl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.about-stats .progress-bars .progress-bar .prog-ti-con {
+.about-stats .progress-bars .techs-right-cl {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.about-stats .progress-bars .techs-right-cl .prog-ti-con {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -408,139 +403,74 @@ section {
       -ms-flex-align: center;
           align-items: center;
   gap: .5rem;
+  margin-top: .5rem;
 }
 
-.about-stats .progress-bars .progress-bar .prog-ti-con .progress-title {
-  text-transform: uppercase;
+.about-stats .progress-bars .techs-right-cl .prog-ti-con .progress-title {
   font-weight: 500;
 }
 
-.about-stats .progress-bars .progress-bar .prog-ti-con #js {
-  background-image: url(icons/javascript-round.svg);
+.about-stats .progress-bars .techs-right-cl .prog-ti-con #js {
+  background-repeat: no-repeat;
+  background-image: url(icons/javascript.svg);
   background-position: center;
   background-size: contain;
   width: 40px;
   height: 40px;
 }
 
-.about-stats .progress-bars .progress-bar .prog-ti-con #firebase {
+.about-stats .progress-bars .techs-right-cl .prog-ti-con #firebase {
   background-repeat: no-repeat;
   background-image: url(icons/firebase-icon.svg);
   background-position: center;
   background-size: contain;
-  width: 35px;
-  height: 40px;
+  width: 30px;
+  height: 42.5px;
 }
 
-.about-stats .progress-bars .progress-bar .prog-ti-con #express {
+.about-stats .progress-bars .techs-right-cl .prog-ti-con #express {
   background-repeat: no-repeat;
   background-image: url(icons/express-dark-theme.svg);
   background-position: center;
   background-size: contain;
-  width: 35px;
+  width: 40px;
   height: 40px;
 }
 
-.about-stats .progress-bars .progress-bar .prog-ti-con #node {
+.about-stats .progress-bars .techs-right-cl .prog-ti-con #node {
   background-repeat: no-repeat;
   background-image: url(icons/nodejs-icon.svg);
   background-position: center;
   background-size: contain;
-  width: 44px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
-.about-stats .progress-bars .progress-bar .prog-ti-con #html {
+.about-stats .progress-bars .techs-right-cl .prog-ti-con #html {
   background-repeat: no-repeat;
   background-image: url(icons/html5-icon.svg);
   background-position: center;
   background-size: contain;
-  width: 44px;
-  height: 51px;
+  width: 35px;
+  height: 42px;
 }
 
-.about-stats .progress-bars .progress-bar .prog-ti-con #css {
+.about-stats .progress-bars .techs-right-cl .prog-ti-con #css {
   background-repeat: no-repeat;
   background-image: url(icons/css3.svg);
   background-position: center;
   background-size: contain;
   width: 35px;
-  height: 40px;
+  height: 42px;
 }
 
-.about-stats .progress-bars .progress-bar .prog-ti-con #sass {
+.about-stats .progress-bars .techs-right-cl .prog-ti-con #sass {
   background-repeat: no-repeat;
   background-image: url(icons/sass-icon.svg);
   background-position: center;
   background-size: contain;
-  width: 55px;
-  height: 45px;
-}
-
-.about-stats .progress-bars .progress-bar .skills-icons {
-  background-repeat: no-repeat;
-  width: 25;
-  height: 28;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .prog-text {
-  color: var(--color-grey2);
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .progress {
-  width: 100%;
-  height: .45rem;
-  background-color: var(--color-grey4);
-  margin-left: 1rem;
-  position: relative;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .progress span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background-color: var(--color-secondary);
-  -webkit-transition: var(--trasition-all);
-  transition: var(--trasition-all);
-  width: 60%;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .progress .html {
-  width: 65%;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .progress .js {
-  width: 75%;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .progress .css {
-  width: 50%;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .progress .node {
-  width: 50%;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .progress .express {
-  width: 40%;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .progress .scss {
-  width: 10%;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .progress .firebase {
-  width: 40%;
+  width: 47.5px;
+  height: 30px;
 }
 
 .stat-title {
@@ -933,7 +863,6 @@ section {
 .main-btn {
   border-radius: 30px;
   color: inherit;
-  font-weight: 600;
   position: relative;
   border: 1px solid var(--color-secondary);
   display: -webkit-box;
@@ -1010,6 +939,10 @@ section {
   padding: 0 2rem;
 }
 
+.send .btn-text .btn-send {
+  font-size: 1rem;
+}
+
 .send .btn-icon {
   color: var(--lavender-floral);
   display: -webkit-box;
@@ -1035,6 +968,10 @@ section {
   -webkit-transition: var(--trasition-all);
   transition: var(--trasition-all);
   z-index: -1;
+}
+
+.send:hover {
+  cursor: pointer;
 }
 
 .send:hover::before {

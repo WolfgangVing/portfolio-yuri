@@ -21,9 +21,9 @@
             // these IDs from the previous steps
             emailjs.sendForm("service_og59fzj", "template_3s5qr6s", this)
                 .then(function() {
-                    console.log('SUCCESS!');
+                    alert('Email sent');
                 }, function(error) {
-                    console.log('FAILED...', error);
+                    alert('FAILED...', error);
                 });
         });
     }
@@ -35,7 +35,6 @@
       <div class="left-header">
         <div class="h-shape"></div>
         <div class="image">
-          <img src="img/hero.png" alt="">
         </div>
       </div>
       <div class="right-header">
@@ -49,7 +48,7 @@
           I also have a plan, that I'm working while I progress in my career, so in 5 to 7 years I can be a great full stack developer and also work with devops.
         </p>
         <div class="btn-container">
-          <a href="assets/yuri-curriculum.pdf" download="newfilename" type="application/octet-stream" class="main-btn">
+          <a href="assets/yuri-curriculum.pdf" download="yuri-cv" type="application/octet-stream" class="main-btn">
             <span class="btn-text">Download CV</span>
             <span class="btn-icon"><i class="fas fa-cloud-arrow-down"></i></span>
           </a>
@@ -66,16 +65,13 @@
         <div class="left-about">
           <h4>Information About me</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Eveniet labore nihil obcaecati consequatur. Debitis error doloremque, 
-            vero eos vel nemo eius voluptatem dicta tenetur modi. <br /> <br /> La musica
-            delectus dolore fugiat exercitationem a, 
-            ipsum quidem quo enim natus accusamus labore dolores nam. Unde.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-            Harum non necessitatibus deleniti eum soluta.
+            While I was introduced to programming and still wavering between this field and biology was through
+            Alan Key's academy path, choosing one wasn't going to set in stone for eternity.<br>
+            Because of that and my love for games, I decided to first adventure through IT. I'm looking forward at a point where I can
+            be a good DevOps and also help in the game industry.
           </p>
           <div class="btn-container">
-            <a href="assets/yuri-curriculum.pdf" download="newfilename" type="application/octet-stream" class="main-btn">
+            <a href="assets/yuri-curriculum.pdf" download="yuri-cv" type="application/octet-stream" class="main-btn">
               <span class="btn-text">Download CV</span>
               <span class="btn-icon"><i class="fas fa-download"></i></span>
             </a>
@@ -105,88 +101,39 @@
       <div class="about-stats">
         <h4 class="stat-title">Technologies and Tools</h4>
         <div class="progress-bars">
-          <div class="progress-bar">
+          <div class="techs-left-cl">
+            <p>
+              These are the languages and tools that I'm currently studying and have knowledge of the basics.
+            </p>
+          </div>
+          <div class="techs-right-cl">
             <div class="prog-ti-con">
               <i class="skill-icons" id="html"></i>
               <p class="progress-title">HTML5</p>
             </div>
-            <div class="progress-con">
-              <p class="prog-text">65%</p>
-              <div class="progress">
-                  <span class="html"></span>
-              </div>
-            </div>
-          </div>
-          <div class="progress-bar">
             <div class="prog-ti-con">
               <i class="skill-icons" id="js"></i>
               <p class="progress-title">Javascript</p>
             </div>
-            <div class="progress-con">
-              <p class="prog-text">75%</p>
-              <div class="progress">
-                  <span class="js"></span>
-              </div>
-            </div>
-          </div>
-          <div class="progress-bar">
             <div class="prog-ti-con">
               <i class="skill-icons" id="css"></i>
               <p class="progress-title">CSS3</p>
             </div>
-            <div class="progress-con">
-              <p class="prog-text">50%</p>
-              <div class="progress">
-                  <span class="css"></span>
-              </div>
-            </div>
-          </div>
-          <div class="progress-bar">
             <div class="prog-ti-con">
               <i class="skill-icons" id="node"></i>
               <p class="progress-title">NODE.js</p>
             </div>
-            <div class="progress-con">
-              <p class="prog-text">50%</p>
-              <div class="progress">
-                  <span class="node"></span>
-              </div>
-            </div>
-          </div>
-          <div class="progress-bar">
             <div class="prog-ti-con">
               <i class="skill-icons" id="express"></i>
-              <p class="progress-title">Express.js</p>
+              <p class="progress-title">Express</p>
             </div>
-            <div class="progress-con">
-              <p class="prog-text">40%</p>
-              <div class="progress">
-                  <span class="express"></span>
-              </div>
-            </div>
-          </div>
-          <div class="progress-bar">
             <div class="prog-ti-con">
               <i class="skill-icons" id="sass"></i>
               <p class="progress-title">SCSS</p>
             </div>
-            <div class="progress-con">
-              <p class="prog-text">10%</p>
-              <div class="progress">
-                  <span class="scss"></span>
-              </div>
-            </div>
-          </div>
-          <div class="progress-bar">
             <div class="prog-ti-con">
               <i class="skill-icons" id="firebase"></i>
               <p class="progress-title">Firebase</p>
-            </div>
-            <div class="progress-con">
-              <p class="prog-text">40%</p>
-              <div class="progress">
-                  <span class="firebase"></span>
-              </div>
             </div>
           </div>
         </div>
@@ -273,8 +220,8 @@
           <div class="left-contact">
             <h4>Contact me here</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Similique assumenda officia velit aliquam aut nobis totam.
+              I'm currently looking for job opportunities, primarly intership.
+              If I have captured your attention, contact me.
             </p>
             <div class="contact-info">
               <div class="contact-item">
@@ -326,7 +273,7 @@
             <form onsubmit="" class="contact-form" id="contact-form">
                 <input type="hidden" name="contact_number">
                 <div class="input-controls i-c-2">
-                  <input type="text" name="name" id="name" required placeholder="Name">
+                  <input type="text" name="from_name" id="name" required placeholder="Name">
                   <input type="email" name="email" id="email-cont" required placeholder="Your Email">
                 </div>
                 <div class="input-controls">
@@ -337,7 +284,7 @@
                 </div>
                 <div class="submit-btn">
                   <button type="submit" class="main-btn send">
-                    <span class="btn-text">Send</span>
+                    <span class="btn-text"><p class="btn-send">Send</p></span>
                     <span class="btn-icon"><i class="fa-solid fa-paper-plane"></i></span>
                   </button>
                 </div>

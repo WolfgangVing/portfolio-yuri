@@ -182,21 +182,14 @@ section {
     }
     .image {
       border-radius: var(--br-sm-2);
-      height: 90%;
-      width: 68%;
-      margin-left: 4rem;
-      background-color: var(--color-black);
+      height: 100%;
+      width: 100%;
+      margin-left: .3rem;
+      //background-color: var(--color-black);
+      background-image: url(../img/boneco_yuri.svg);
       transition: var(--trasition-all);
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: var(--trasition-all);
-        filter: grayscale(100%);
-        &:hover{
-          filter: grayscale(0%);
-        }
-      }
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
 
@@ -302,10 +295,16 @@ section {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 
-    .progress-bar {
-      display: flex;
-      flex-direction: column;
 
+    .techs-left-cl {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .techs-right-cl {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      
       .prog-ti-con{
         display: flex;
         flex-direction: row;
@@ -313,14 +312,15 @@ section {
         align-items: center;
         gap: .5rem;
 
+        margin-top: .5rem;
 
         .progress-title {
-          text-transform: uppercase;
           font-weight: 500;
         }
         
         #js{
-          background-image: url(icons/javascript-round.svg);
+          background-repeat: no-repeat;
+          background-image: url(icons/javascript.svg);
           background-position: center;
           background-size: contain;
           width: 40px;
@@ -331,15 +331,15 @@ section {
           background-image: url(icons/firebase-icon.svg);
           background-position: center;
           background-size: contain;
-          width: 35px;
-          height: 40px;
+          width: 30px;
+          height: 42.5px;
         }
         #express {
           background-repeat: no-repeat;
           background-image: url(icons/express-dark-theme.svg);
           background-position: center;
           background-size: contain;
-          width: 35px;
+          width: 40px;
           height: 40px;
         }
         #node {
@@ -347,16 +347,16 @@ section {
           background-image: url(icons/nodejs-icon.svg);
           background-position: center;
           background-size: contain;
-          width: 44px;
-          height: 50px;
+          width: 40px;
+          height: 40px;
         }
         #html {
           background-repeat: no-repeat;
           background-image: url(icons/html5-icon.svg);
           background-position: center;
           background-size: contain;
-          width: 44px;
-          height: 51px;
+          width: 35px;
+          height: 42px;
         }
         #css {
           background-repeat: no-repeat;
@@ -364,68 +364,15 @@ section {
           background-position: center;
           background-size: contain;
           width: 35px;
-          height: 40px;
+          height: 42px;
         }
         #sass {
           background-repeat: no-repeat;
           background-image: url(icons/sass-icon.svg);
           background-position: center;
           background-size: contain;
-          width: 55px;
-          height: 45px;
-        }
-      }
-      .skills-icons {
-        background-repeat: no-repeat;
-        width: 25;
-        height: 28;
-      }
-
-      .progress-con {
-        display: flex;
-        align-items: center;
-
-        .prog-text {
-          color: var(--color-grey2);
-        }
-        .progress {
-          width: 100%;
-          height: .45rem;
-          background-color: var(--color-grey4);
-          margin-left: 1rem;
-          position: relative;
-
-          span {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            background-color: var(--color-secondary);
-            transition: var(--trasition-all);
-            width: 60%;
-          }
-
-          .html {
-            width: 65%;
-          }
-          .js {
-            width: 75%;
-          }
-          .css {
-            width: 50%;
-          }
-          .node {
-            width: 50%;
-          }
-          .express{
-            width: 40%;
-          }
-          .scss {
-            width: 10%;
-          }
-          .firebase {
-            width: 40%;
-          }
+          width: 47.5px;
+          height: 30px;
         }
       }
     }
@@ -739,7 +686,7 @@ section {
 .main-btn {
   border-radius: 30px;
   color: inherit;
-  font-weight: 600;
+  //font-weight: 600;
   position: relative;
   border: 1px solid var(--color-secondary);
   display: flex;
@@ -789,8 +736,11 @@ section {
   overflow: hidden;
   background-color: transparent;
   
-  .btn-text {
+  .btn-text{
     padding: 0 2rem;
+    .btn-send {
+      font-size: 1rem;
+    }
   }
   .btn-icon {
     color: var(--lavender-floral);
@@ -811,6 +761,7 @@ section {
     z-index: -1;
   }
   &:hover{
+    cursor: pointer;
     &::before{
       width: 100%;
       height: 100%;

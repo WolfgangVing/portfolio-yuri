@@ -47,7 +47,7 @@ For the Contact Form, I had a recent experience using Elasticemail and SMTPjs ma
     - [x] Home Page 
       
       - [x] Short descripition about me 
-      - [ ] Change Photo to an illustration
+      - [x] Change Photo to an illustration
 
     - [ ] About Me
       - [ ] Write Something about myself
@@ -57,7 +57,7 @@ For the Contact Form, I had a recent experience using Elasticemail and SMTPjs ma
     
     - [x] My Portfolio.
       
-    - [ ] Contact Me
+    - [x] Contact Me
 
   - [x] Deploy
 
