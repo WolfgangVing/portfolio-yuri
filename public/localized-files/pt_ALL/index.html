@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuri Silva | Estudante TI</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/421dc5ad43.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">(function() { emailjs.init("2K2dRCSOcLwbt5KpF");})();</script>
+  <script type="text/javascript">
+    window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // generate a five digit number for the contact_number variable
+            this.contact_number.value = Math.random() * 100000 | 0;
+            // these IDs from the previous steps
+            emailjs.sendForm("service_og59fzj", "template_3s5qr6s", this)
+                .then(function() {
+                    alert('Email sent');
+                }, function(error) {
+                    alert('FAILED...', error);
+                });
+        });
+    }
+</script>
+</head>
+<body class="main-content">
+  <header class="section sec1 header active" id="home">
+    <div class="header-content">
+      <div class="left-header">
+        <div class="h-shape"></div>
+        <div class="image">
+        </div>
+      </div>
+      <div class="right-header">
+        <h1 class="name">
+          Olá, meu nome é<span class="highlight">Yuri Soares da Silva</span>
+          e estudo TI.
+        </h1>
+        <p>
+          Graduando em Análise e Desenvolvimento de Sistemas. 
+          Fora da faculdade, estou estudando a como ser <span class="highlight">Desenvolvedor Full Stack</span> e como manter estas tecnologias.<br>
+          Também tenho um plano para, que enquanto eu trabalho e progresso na minha carreira, em 5 a 7 anos can become a greate developer and start work with DevOps.
+        </p>
+        <div class="btn-container">
+          <a href="assets/yuri-curriculum.pdf" download="yuri-cv" type="application/octet-stream" class="main-btn">
+            <span class="btn-text">Download CV</span>
+            <span class="btn-icon"><i class="fas fa-cloud-arrow-down"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section sec2 about" id="about">
+      <div class="main-title">
+        <h2>Sobre <span>mim</span><span class="bg-text">Meus Status</span></h2>
+      </div>
+      <div class="about-container">
+        <div class="left-about">
+          <h4>Um pouco mais de informação sobre mim.</h4>
+          <p>
+            Enquanto eu estava sendo introduzido a programação e ainda estava balançado entre este campo e Biologia,
+            foi atráves da trajetória acadêmica de Alan Key, que percebi que escolher uma não iria ser algo escrito na pedra.
+            Por causa de meu carinho por jogos, decidi começar minha aventura pela TI. 
+            Eu olho para um ponto no futuro em que eu seja um bom DevOps e que possa colaborar com à industria de jogos.
+          </p>
+          <div class="btn-container">
+            <a href="assets/yuri-curriculum.pdf" download="yuri-cv" type="application/octet-stream" class="main-btn">
+              <span class="btn-text">Download CV</span>
+              <span class="btn-icon"><i class="fas fa-download"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="right-about">
+          <div class="about-item">
+            <div class="abt-text">
+              <p class="large-txt">1</p>
+              <p class="small-txt">Projetos <br /> Concluídos</p>
+            </div>
+          </div>
+          <div class="about-item">
+            <div class="abt-text">
+              <p class="large-txt">-1</p>
+              <p class="small-txt">Anos de <br /> experience</p>
+            </div>
+          </div>
+          <div class="about-item">
+              <div class="abt-text">
+              <p class="large-txt">1</p>
+              <p class="small-txt">clientes <br /> Satisfeitos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-stats">
+        <h4 class="stat-title">Tecnologias e ferramentas</h4>
+        <div class="progress-bars">
+          <div class="techs-left-cl">
+            <p>
+              Essas são as linguagens e ferramentas que atualmente estou estudando e 
+              tenho conhecimento pelo menos nível básico.
+            </p>
+          </div>
+          <div class="techs-right-cl">
+            <div class="prog-ti-con">
+              <i class="skill-icons" id="html"></i>
+              <p class="progress-title">HTML5</p>
+            </div>
+            <div class="prog-ti-con">
+              <i class="skill-icons" id="js"></i>
+              <p class="progress-title">Javascript</p>
+            </div>
+            <div class="prog-ti-con">
+              <i class="skill-icons" id="css"></i>
+              <p class="progress-title">CSS3</p>
+            </div>
+            <div class="prog-ti-con">
+              <i class="skill-icons" id="node"></i>
+              <p class="progress-title">NODE.js</p>
+            </div>
+            <div class="prog-ti-con">
+              <i class="skill-icons" id="express"></i>
+              <p class="progress-title">Express</p>
+            </div>
+            <div class="prog-ti-con">
+              <i class="skill-icons" id="sass"></i>
+              <p class="progress-title">SCSS</p>
+            </div>
+            <div class="prog-ti-con">
+              <i class="skill-icons" id="firebase"></i>
+              <p class="progress-title">Firebase</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h4 class="stat-title">Minha Linha do Tempo</h4>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="tl-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <p class="tl-duration">2021 - Presente</p>
+          <h5>Análise e Desenvolvimento de Sistemas<span> <br>- Wyden</span></h5>
+          <p>
+            Atualmente estudando, conclusão esperada para 06/2023
+          </p>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-icon">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <p class="tl-duration">03/2022 - 03/2024</p>
+          <h5>Remote Work and Virtual Collaboration Professional Certificate<span> <br>- RWVCPC&trade;</span></h5>
+          <p><span>Emitido:</span> CertiProf&reg;</p>
+          <p>
+            <span>Certificado Id:</span> 74661563
+          </p>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-icon">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <p class="tl-duration">Jan 2019</p>
+          <h5>SCRUM Foundation Professional Certificate<span> <br>- RWVCPC&trade;</span></h5>
+          <p><span>Emitido:</span> CertiProf&reg;</p>
+          <p>
+            <span>Certificado Id:</span> CLFQDDDPSV-QZLHVGGS-XMTTHSCXPW
+          </p>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="section sec3 portfolio" id="portfolio">
+      <div class="main-title">
+        <h2>Meu <span>Portfolio</span><span class="bg-text">Codes&Projects</span></h2>
+      </div>
+        <p class="port-text">
+          Aqui estão alguns dos meus trabalhos de feitos. 
+        </p>
+        <div class="portfolios">
+          <div class="portfolio-item">
+            <div class="image">
+              <img src="img/minha-stack-até-aqui.svg" alt="Node.js + Express">
+            </div>
+            <div class="hover-item">
+              <h3>Request Header Parser<br>Microservice</h3>
+              <div class="icons">
+                <a href="https://github.com/WolfgangVing/boilerplate-project-headerparser" target="blank" class="icon"><i class="fa-brands fa-github-alt"></i></a>
+                <a href="https://replit.com/@WolfgangVing/boilerplate-project-headerparser#.replit" target="blank" class="icon"><i class="icon-img"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image">
+              <img src="img/minha-stack-até-aqui.svg" alt="Node.js + Express">
+            </div>
+            <div class="hover-item">
+              <h3>Timestamp<br>Microservice</h3>
+              <div class="icons">
+                <a href="https://github.com/WolfgangVing/boilerplate-project-timestamp" target="blank" class="icon">
+                  <i class="fa-brands fa-github-alt"></i>
+                </a>
+                <a href="https://replit.com/@WolfgangVing/timestam-project-yurisilva#.replit" target="blank" class="icon"><i class="icon-img"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="section sec4 contact" id="contact">
+      <div class="contact-container">
+        <div class="main-title">
+          <h2>Contate-<span>Me</span><span class="bg-text">Manda um email</span></h2>
+        </div>
+        <div class="contact-content-con">
+          <div class="left-contact">
+            <h4>Contact me here</h4>
+            <p>
+              Atualmente estou procurando por oportunidades de emprego, pricipalmente para estágio.
+              Se eu pude capturar sua atenção, me manda uma mensagem.
+              I'm currently looking for job opportunities, primarly intership.
+              If I have captured your attention, contact me.
+            </p>
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>Localização</span>
+                </div>
+                <p>
+                  <span>: Bahia, Brasil</span>
+                </p>
+              </div>
+              <div class="contact-item">
+                <div class="icon">
+                  <i class="fa-solid fa-at"></i>
+                  <span>Email</span>
+                </div>
+                <p>
+                  <span>: ycss.v1@gmail.com</span>
+                </p>
+              </div>
+              <div class="contact-item">
+                <div class="icon">
+                  <i class="fa-solid fa-mobile"></i>
+                  <span>Phone</span>
+                </div>
+                <p>
+                  <span>: +55 71 986955209</span>
+                </p>
+              </div>
+              <div class="contact-item">
+                <div class="icon">
+                  <i class="fa-solid fa-earth-americas"></i>
+                  <span>Languages</span>
+                </div>
+                <p>
+                  <span>: Portuguese, English</span>
+                </p>
+              </div>
+            </div>
+            <div class="contact-icons">
+              <div class="contact-icon">
+                <a href="https://www.linkedin.com/in/yuri-css/" target="blank">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="right-contact">
+            <form onsubmit="" class="contact-form" id="contact-form">
+                <input type="hidden" name="contact_number">
+                <div class="input-controls i-c-2">
+                  <input type="text" name="from_name" id="name" required placeholder="Name">
+                  <input type="email" name="email" id="email-cont" required placeholder="Your Email">
+                </div>
+                <div class="input-controls">
+                  <input type="text" name="subject" id="subject" required placeholder="Subject">
+                </div>
+                <div class="input-controls">
+                  <textarea name="message" id="message" cols="15" rows="8" required placeholder="Message here..."></textarea>
+                </div>
+                <div class="submit-btn">
+                  <button type="submit" class="main-btn send">
+                    <span class="btn-text"><p class="btn-send">Enviar</p></span>
+                    <span class="btn-icon"><i class="fa-solid fa-paper-plane"></i></span>
+                  </button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="controlls">
+    <div class="control control-1 active-btn" data-id="home">
+      <i class="fa-solid fa-house"></i>
+    </div>
+    <div class="control control-2 " data-id="about">
+      <i class="fa-solid fa-user-graduate"></i>
+    </div>
+    <div class="control control-3 " data-id="portfolio">
+      <i class="fa-solid fa-briefcase"></i>
+    </div>
+    <div class="control control-5 " data-id="contact">
+      <i class="fa-solid fa-address-card"></i>
+    </div>
+  </div>
+  <div class="theme-btn" theme-btn>
+    <i class="fa-solid fa-circle-half-stroke"></i>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

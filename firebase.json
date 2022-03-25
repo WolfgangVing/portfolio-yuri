@@ -16,6 +16,9 @@
       "**/.vscode**", 
       "comandos-IMPORTANTES.txt"
     ],
+    "i18n": {
+      "/": "/localized-files"
+    },
     "rewrites": [
       {
         "source": "**",
