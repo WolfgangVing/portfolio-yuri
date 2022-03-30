@@ -663,8 +663,8 @@ section {
           align-items: center;
   margin: 0 .6rem;
   cursor: pointer;
-  -webkit-transition: var(--trasition-all);
-  transition: var(--trasition-all);
+  -webkit-transition: all ease-in-out .4s;
+  transition: all ease-in-out .4s;
 }
 
 .portfolios .portfolio-item .card-item .icons .icon .icon-img {
@@ -692,29 +692,41 @@ section {
 .portfolios .portfolio-item .card-description {
   padding: 0.3rem;
   opacity: 0;
-  height: 100%;
+  height: 0%;
   text-align: center;
-  width: 50%;
+  width: 80%;
   background-color: #137547;
-  border: 1px solid var(--color-secondary);
-  -webkit-transition: all .4s ease-in-out .4s;
-  transition: all .4s ease-in-out .4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1.7px solid var(--color-secondary);
+  -webkit-transition: all .7s ease-in, heigth 1.4s;
+  transition: all .7s ease-in, heigth 1.4s;
+  -webkit-transition-timing-function: cubic-bezier(0.92, 0.12, 0.35, 1);
+          transition-timing-function: cubic-bezier(0.92, 0.12, 0.35, 1);
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
 }
 
 .portfolios .portfolio-item .card-description p {
-  font-size: 0.75rem;
+  font-size: .78rem;
 }
 
-.portfolios .portfolio-item .card-item:hover .hover-item {
+.portfolios .portfolio-item:hover .card-item .hover-item {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-.portfolios .portfolio-item .card-item:hover .card-description {
+.portfolios .portfolio-item:hover .card-description {
   opacity: 1;
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1);
+  height: 100%;
 }
 
 .contact-content-con {
