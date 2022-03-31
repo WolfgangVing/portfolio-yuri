@@ -25,8 +25,11 @@
   --border-green: 1px solid var(--color-secondary);
   --br-sm-2: 14px;
   --trasition-all: all .4s ease-in-out;
-  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3)
-;
+  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3);
+  --replit: brightness(100%) saturate(0%);
+  --replit-hover: brightness(0%) saturate(100%);
+  --github: #fff;
+  --github-hover: #000;
 }
 
 .light-mode {
@@ -44,6 +47,10 @@
   --color-grey4: #454e56;
   --color-grey5: #f8f8f8;
   --color-grey6: #12181b;
+  --replit: brightness(0%) saturate(100%);
+  --replit-hover: brightness(100%) saturate(0%);
+  --github: black;
+  --github-hover: white;
 }
 
 body {
@@ -667,14 +674,23 @@ section {
   transition: all ease-in-out .4s;
 }
 
-.portfolios .portfolio-item .card-item .icons .icon .icon-img {
-  background-image: url(icons/replit-icon.svg);
+.portfolios .portfolio-item .card-item .icons .icon i {
+  font-size: 1.3rem;
+  color: var(--github);
+  -webkit-transition: var(--trasition-all);
+  transition: var(--trasition-all);
+}
+
+.portfolios .portfolio-item .card-item .icons .icon .replit-icon {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  width: 1.5rem;
-  height: 1.5rem;
-  color: var(--color-white);
+  width: 1.4rem;
+  height: 1.4rem;
+  -webkit-filter: var(--replit);
+          filter: var(--replit);
+  -webkit-transition: var(--trasition-all);
+  transition: var(--trasition-all);
 }
 
 .portfolios .portfolio-item .card-item .icons .icon:hover {
@@ -682,11 +698,15 @@ section {
 }
 
 .portfolios .portfolio-item .card-item .icons .icon:hover i {
-  color: var(--russian-violet);
+  color: var(--github-hover);
 }
 
-.portfolios .portfolio-item .card-item .icons .icon:hover .icon-img {
-  color: var(--russian-violet);
+.portfolios .portfolio-item .card-item .icons .icon:hover .replit-icon {
+  -webkit-filter: var(--replit-hover);
+          filter: var(--replit-hover);
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  filter: var(--replit-hover);
 }
 
 .portfolios .portfolio-item .card-description {
