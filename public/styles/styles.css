@@ -480,6 +480,15 @@ section {
   height: 30px;
 }
 
+.about-stats .progress-bars .techs-right-cl .prog-ti-con #git {
+  background-repeat: no-repeat;
+  background-image: url(icons/git-icon.svg);
+  background-position: center;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+}
+
 .stat-title {
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -515,14 +524,36 @@ section {
   border-left: 1px solid var(--color-grey4);
 }
 
-.timeline .timeline-item .tl-icon {
+.timeline .timeline-item .tl-icons-cont {
   position: absolute;
-  left: -27px;
+  left: -25px;
   top: 0;
-  background-color: var(--lavender-floral);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .5rem;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.timeline .timeline-item .tl-icons-cont i {
+  font-size: 1.3rem;
+}
+
+.timeline .timeline-item .tl-icons-cont .tl-icon {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  background-color: var(--lavender-floral);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -534,8 +565,30 @@ section {
           justify-content: center;
 }
 
-.timeline .timeline-item .tl-icon i {
+.timeline .timeline-item .tl-icons-cont .tl-icon i {
   font-size: 1.3rem;
+}
+
+.timeline .timeline-item .tl-icons-cont a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  position: relative;
+  cursor: pointer;
+}
+
+.timeline .timeline-item .tl-icons-cont a i {
+  font-size: 1rem;
 }
 
 .timeline .timeline-item .tl-duration {

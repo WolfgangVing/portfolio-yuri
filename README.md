@@ -1,8 +1,8 @@
-# My Own Repositorio. <img src="https://img.shields.io/static/v1?label=Website&message=On&color=007BFF&style=flat&logo=ghost"/> <img src="https://img.shields.io/static/v1?label=Concluded&message=No&color=FF0000&style=flat&logo=ghost"/>
+# My Own Repositorio. <img src="https://img.shields.io/static/v1?label=Website&message=On&color=007BFF&style=flat&logo=ghost"/> <img src="https://img.shields.io/static/v1?label=Responsive&message=No&color=7121C2&style=flat&logo=ghost"/> <img src="https://img.shields.io/static/v1?label=Concluded&message=No&color=FF0000&style=flat&logo=ghost"/>
 
 
 <h4 align="center"> 
-	🚧 Meu Portfolio em construção...  🚧
+	🚧 Meu Portfolio em construção...  still not responsive🚧
 </h4>
 
 <p align="center">
@@ -33,10 +33,9 @@ For the Contact Form, I had a recent experience using Elasticemail and SMTPjs ma
 * HTML5
 * Javascript
 * SCSS
-* Firebase
-* SMTPjs
-* Elasticemail
-
+* Firebase (Hosting)
+* EmailJS
+* Fontawesome
 ---
 
 ### TODO
@@ -49,9 +48,8 @@ For the Contact Form, I had a recent experience using Elasticemail and SMTPjs ma
       - [x] Short descripition about me 
       - [x] Change Photo to an illustration
 
-    - [ ] About Me
-      - [ ] Write Something about myself
-      - [ ] Describe my soft skills
+    - [x] About Me
+      - [x] Write Something about myself
       - [x] Skills
       - [x] Timeline
     
@@ -63,7 +61,7 @@ For the Contact Form, I had a recent experience using Elasticemail and SMTPjs ma
 
   - [ ] UX
     - [ ] Responsive
-    - [ ] English and Portuguese language supporte
+    - [x] English and Portuguese language supporte
     - [ ] Making people able to see my badges ate Credly or/and my Drive folder with the certificates as PDF.
     - [ ] Animate the transition in Projects to a Hexagon expanding from the center.
 
@@ -72,7 +70,7 @@ For the Contact Form, I had a recent experience using Elasticemail and SMTPjs ma
 
 ## Agredecimentos
 This website is inspired by MacLinz's [Build A Portfolio Website Project 2022 - HTML CSS and Javascript Website Tutorial](https://youtu.be/W-5jkFPtLcc).<br>
-With the help of the amazing [freeCodeCamp](freeCodeCamp.org),because is thankful to them that I found in their [channel](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ).
+With the help of the amazing [freeCodeCamp](freeCodeCamp.org),is thankful to them that I found in their [channel](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ).
 
 
 ## License

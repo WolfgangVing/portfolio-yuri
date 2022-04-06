@@ -383,6 +383,15 @@ section {
           width: 47.5px;
           height: 30px;
         }
+
+        #git {
+          background-repeat: no-repeat;
+          background-image: url(icons/git-icon.svg);
+          background-position: center;
+          background-size: contain;
+          width: 40px;
+          height: 40px;
+        }
       }
     }
   }
@@ -417,14 +426,13 @@ section {
     padding-left: 3rem;
     border-left: 1px solid var(--color-grey4);
     
-    .tl-icon {
+    .tl-icons-cont {
       position: absolute;
-      left: -27px;
+      left: -25px;
       top: 0;
-      background-color: var(--lavender-floral);
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
 
       display: flex;
       align-items: center;
@@ -433,7 +441,40 @@ section {
       i {
         font-size: 1.3rem;
       }
+
+      .tl-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: var(--lavender-floral);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+          font-size: 1.3rem;
+        }
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: var(--color-secondary);
+        position: relative;
+        
+        cursor: pointer;
+        i {
+          font-size: 1rem;
+        }
+      }
     }
+
 
     .tl-duration {
       padding: .2rem .6rem;
