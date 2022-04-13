@@ -61,8 +61,8 @@ For the Contact Form, I had a recent experience using Elasticemail and SMTPjs ma
 
   - [ ] UX
     - [ ] Responsive
-    - [x] English and Portuguese language supporte
-    - [ ] Making people able to see my badges ate Credly or/and my Drive folder with the certificates as PDF.
+    - [x] English and Portuguese language supporte(i18n)
+    - [ ] Making people able to see my badges at Credly or/and my Drive folder with the certificates as PDF.
     - [ ] Animate the transition in Projects to a Hexagon expanding from the center.
 
 
