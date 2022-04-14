@@ -7,22 +7,17 @@
 }
 
 :root {
-  --russian-violet: #110424;
+  --background-color: #110424;
   --color-secondary: #2dc586;
-  --turquoise: #25E4C7;
-  --sky-blue-cryola: #76E5FC;
   --lavender-floral: #A882DD;
-  --color-white: #FFFFFF;
-  --color-black: #000;
-  --color-grey0: #f8f8f8;
+  --font-color: #FFFFFF;
+  --big-text-color: #2a2e35;
+  --border-item-color: #2a2e35;
+  --slash-color: #2a2e35;
+  --background-components-color: #2a2e35;
   --color-grey1: #dbe1e8;
   --color-grey2: #b2becd;
-  --color-grey3: #6c7983;
-  --color-grey4: #454e56;
-  --color-grey5: #2a2e35;
-  --color-grey6: #12181b;
-  --border-grey5: 1px solid var(--color-grey5);
-  --border-green: 1px solid var(--color-secondary);
+  --color-grey3: #454e56;
   --br-sm-2: 14px;
   --trasition-all: all .4s ease-in-out;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3);
@@ -33,20 +28,17 @@
 }
 
 .light-mode {
-  --russian-violet: #ffffff;
+  --background-color: #ffffff;
   --color-secondary: #F56692;
-  --turquoise: #25E4C7;
-  --sky-blue-cryola: #110424;
   --lavender-floral: #2dc586;
-  --color-white: #454e56;
-  --color-black: #000;
-  --color-grey0: #f8f8f8;
+  --font-color: #454e56;
+  --big-text-color: #eeeeee;
+  --border-item-color: #e2e2e2;
+  --slash-color: #c8c8c8;
+  --background-components-color: #dadada;
   --color-grey1: #6c7983;
   --color-grey2: #6c7983;
-  --color-grey3: #6c7983;
-  --color-grey4: #454e56;
-  --color-grey5: #f8f8f8;
-  --color-grey6: #12181b;
+  --color-grey3: #454e56;
   --replit: brightness(0%) saturate(100%);
   --replit-hover: brightness(100%) saturate(0%);
   --github: black;
@@ -54,12 +46,14 @@
 }
 
 body {
-  background-color: var(--russian-violet);
+  background-color: var(--background-color);
   font-family: 'Poppins', sans-serif;
   font-size: 1.1rem;
-  color: var(--color-white);
+  color: var(--font-color);
   -webkit-transition: var(--trasition-all);
   transition: var(--trasition-all);
+  -webkit-text-decoration: var(--font-color);
+          text-decoration: var(--font-color);
 }
 
 a {
@@ -71,7 +65,6 @@ a {
 
 header {
   height: 100vh;
-  color: var(--color-white);
   overflow: hidden;
 }
 
@@ -81,7 +74,7 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 3rem 18rem;
+  padding: 3rem 13rem;
 }
 
 .section {
@@ -89,7 +82,7 @@ section {
           transform: translateY(-100%);
   -webkit-transition: var(--trasition-all);
   transition: var(--trasition-all);
-  background-color: var(--russian-violet);
+  background-color: var(--background-color);
 }
 
 .sec1 {
@@ -165,7 +158,7 @@ section {
 .controlls .control {
   padding: 1rem;
   cursor: pointer;
-  background-color: var(--color-grey4);
+  background-color: var(--color-grey3);
   width: 55px;
   height: 55px;
   border-radius: 50%;
@@ -196,7 +189,7 @@ section {
 }
 
 .controlls .active-btn i {
-  color: var(--color-white);
+  color: var(--font-color);
 }
 
 /* Header-Content*/
@@ -242,6 +235,11 @@ section {
   transition: var(--trasition-all);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.header-content .left-header .image .techs {
+  width: 100px;
+  height: 100%;
 }
 
 .header-content .right-header {
@@ -305,7 +303,7 @@ section {
 }
 
 .about-container .right-about .about-item {
-  border: 1px solid var(--color-grey5);
+  border: 1px solid var(--border-item-color);
   border-radius: 5px;
   -webkit-transition: var(--trasition-all);
   transition: var(--trasition-all);
@@ -361,7 +359,7 @@ section {
   top: 15px;
   width: 2rem;
   height: 2px;
-  background-color: var(--color-grey5);
+  background-color: var(--slash-color);
 }
 
 .about-stats {
@@ -504,7 +502,7 @@ section {
   top: 0;
   width: 40%;
   height: 1px;
-  background-color: var(--color-grey5);
+  background-color: var(--slash-color);
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -521,7 +519,7 @@ section {
 .timeline .timeline-item {
   position: relative;
   padding-left: 3rem;
-  border-left: 1px solid var(--color-grey4);
+  border-left: 1px solid var(--color-grey3);
 }
 
 .timeline .timeline-item .tl-icons-cont {
@@ -593,7 +591,7 @@ section {
 
 .timeline .timeline-item .tl-duration {
   padding: .2rem .6rem;
-  background-color: var(--color-grey5);
+  background-color: var(--background-components-color);
   border-radius: 15px;
   display: inline-block;
   font-size: .8rem;
@@ -611,10 +609,6 @@ section {
   color: var(--color-grey2);
   font-weight: 500;
   font-size: 1.2rem;
-}
-
-.timeline .timeline-item p span {
-  color: var(--color-grey3);
 }
 
 .port-text {
@@ -655,8 +649,10 @@ section {
 .portfolios .portfolio-item .card-item img {
   width: 100%;
   height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transition: all .37s ease-in-out;
+  transition: all .37s ease-in-out;
 }
 
 .portfolios .portfolio-item .card-item .hover-item {
@@ -690,7 +686,7 @@ section {
 
 .portfolios .portfolio-item .card-item h3 {
   font-size: 1.5rem;
-  color: var(--color-white);
+  color: var(--font-color);
   margin-bottom: 1.5rem;
 }
 
@@ -708,7 +704,7 @@ section {
 }
 
 .portfolios .portfolio-item .card-item .icons .icon {
-  background-color: var(--russian-violet);
+  background-color: var(--background-color);
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -747,7 +743,7 @@ section {
 }
 
 .portfolios .portfolio-item .card-item .icons .icon:hover {
-  background-color: var(--color-white);
+  background-color: var(--font-color);
 }
 
 .portfolios .portfolio-item .card-item .icons .icon:hover i {
@@ -789,6 +785,10 @@ section {
 
 .portfolios .portfolio-item .card-description p {
   font-size: .78rem;
+}
+
+.portfolio .portfolio-item:hover .card-item img.techs {
+  visibility: hidden;
 }
 
 .portfolios .portfolio-item:hover .card-item .hover-item {
@@ -877,8 +877,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: var(--color-white);
-  background-color: var(--color-grey5);
+  background-color: var(--background-components-color);
   cursor: pointer;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -914,9 +913,9 @@ section {
   padding: .8rem 1.1rem;
   outline: none;
   border: none;
-  background-color: var(--color-grey5);
+  background-color: var(--background-components-color);
   width: 100%;
-  color: var(--color-white);
+  color: var(--font-color);
   resize: none;
 }
 
@@ -946,7 +945,7 @@ section {
   height: 70px;
   border-radius: 50%;
   position: fixed;
-  background-color: var(--color-grey4);
+  background-color: var(--color-grey3);
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1128,14 +1127,14 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
-  color: var(--color-grey5);
+  color: var(--big-text-color);
   -webkit-transition: var(--trasition-all);
   transition: var(--trasition-all);
   z-index: -1;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-weight: 800;
-  font-size: 6.3rem;
+  font-size: 6rem;
 }
 
 @media screen and (max-width: 600px) {

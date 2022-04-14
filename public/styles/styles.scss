@@ -6,22 +6,21 @@
 }
 
 :root {
-	--russian-violet: #110424;
+  //Colors based in Dark Mode
+	--background-color: #110424;
 	--color-secondary: #2dc586;
-  --turquoise: #25E4C7;
-  --sky-blue-cryola: #76E5FC;
   --lavender-floral: #A882DD;
-	--color-white: #FFFFFF;
-	--color-black: #000;
-	--color-grey0: #f8f8f8;
+  --font-color: #FFFFFF;
+  --big-text-color: #2a2e35;
+  --border-item-color: #2a2e35;
+  --slash-color: #2a2e35;
+  --background-components-color: #2a2e35;
+
 	--color-grey1: #dbe1e8;
 	--color-grey2: #b2becd;
-	--color-grey3: #6c7983;
-	--color-grey4: #454e56;
-	--color-grey5: #2a2e35;
-	--color-grey6: #12181b;
-  --border-grey5: 1px solid var(--color-grey5);
-  --border-green: 1px solid var(--color-secondary);
+	--color-grey3: #454e56;
+
+
 	--br-sm-2: 14px;
 	--trasition-all: all .4s ease-in-out;
 	--box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3);
@@ -34,20 +33,21 @@
 
 //This shit really need improviment in variabla declaration.
 .light-mode {
-  --russian-violet: #ffffff;
+  //Colors based in Light Mode
+  --background-color: #ffffff;
 	--color-secondary: #F56692;
-  --turquoise: #25E4C7;
-  --sky-blue-cryola: #110424;
   --lavender-floral: #2dc586;
-	--color-white: #454e56;
-	--color-black: #000;
-	--color-grey0: #f8f8f8;
+  --font-color: #454e56;
+  --big-text-color: #eeeeee;
+  --border-item-color: #e2e2e2;
+  --slash-color: #c8c8c8;
+  --background-components-color: #dadada;
+
 	--color-grey1: #6c7983;
 	--color-grey2: #6c7983;
-	--color-grey3: #6c7983;
-	--color-grey4: #454e56;
-	--color-grey5: #f8f8f8;
-	--color-grey6: #12181b;
+	--color-grey3: #454e56;
+
+
   --replit: brightness(0%) saturate(100%);
   --replit-hover: brightness(100%) saturate(0%);
   --github: black;
@@ -55,11 +55,13 @@
 }
 
 body {
-  background-color: var(--russian-violet);
+  background-color: var(--background-color);
   font-family: 'Poppins', sans-serif;
 	font-size: 1.1rem;
-	color: var(--color-white);
+	color: var(--font-color);
 	transition: var(--trasition-all);
+
+  text-decoration: var(--font-color);
 }
 
 a {
@@ -71,7 +73,6 @@ a {
 
 header {
 	height: 100vh;
-	color: var(--color-white);
 	overflow: hidden;
 }
 
@@ -81,7 +82,7 @@ section {
 	position: absolute;
 	left: 0;
 	top: 0;
-	padding: 3rem 18rem;
+	padding: 3rem 13rem;
 }
 
 
@@ -89,7 +90,7 @@ section {
 .section {
 	transform: translateY(-100%);
 	transition: var(--trasition-all);
-	background-color: var(--russian-violet);
+	background-color: var(--background-color);
 }
 
 .sec1 {
@@ -132,18 +133,11 @@ section {
 	align-items: center;
 	transform: translateY(-50%);
 	
-	// .active-btn {
-	// 	background-color: var(--color-secondary) !important;
-	// 	transition: var(--trasition-all);
-	// 	i{
-	// 		color: var(--color-white) !important;
-	// 	}
-	// }
 
 	.control {
 		padding: 1rem;
 		cursor: pointer;
-		background-color: var(--color-grey4);
+		background-color: var(--color-grey3);
 		width: 55px;
 		height: 55px;
 		border-radius: 50%;
@@ -164,7 +158,7 @@ section {
 		background-color: var(--color-secondary);
 		transition: var(--trasition-all);
 		i{
-			color: var(--color-white);
+			color: var(--font-color);
 		}
 	}
 }
@@ -194,11 +188,15 @@ section {
       height: 100%;
       width: 100%;
       margin-left: .3rem;
-      //background-color: var(--color-black);
       background-image: url(../img/boneco_yuri.svg);
       transition: var(--trasition-all);
       background-repeat: no-repeat;
       background-position: center;
+
+      .techs {
+        width: 100px;
+        height: 100%;
+      }
     }
   }
 
@@ -247,7 +245,7 @@ section {
     gap: 2rem;
 
     .about-item {
-      border: 1px solid var(--color-grey5);
+      border: 1px solid var(--border-item-color);
       border-radius: 5px;
       transition: var(--trasition-all);
       box-shadow: 1px 2px 15px rgba(0,0,0,.1);
@@ -288,7 +286,7 @@ section {
             top: 15px;
             width: 2rem;
             height: 2px;
-            background-color: var(--color-grey5);
+            background-color: var(--slash-color);
           }
         }
       }
@@ -410,7 +408,7 @@ section {
       top: 0;
       width: 40%;
       height: 1px;
-      background-color: var(--color-grey5);
+      background-color: var(--slash-color);
       transform: translateX(-50%);
   }
 }
@@ -424,7 +422,7 @@ section {
   .timeline-item {
     position: relative;
     padding-left: 3rem;
-    border-left: 1px solid var(--color-grey4);
+    border-left: 1px solid var(--color-grey3);
     
     .tl-icons-cont {
       position: absolute;
@@ -478,7 +476,7 @@ section {
 
     .tl-duration {
       padding: .2rem .6rem;
-      background-color: var(--color-grey5);
+      background-color: var(--background-components-color);
       border-radius: 15px;
       display: inline-block;
       font-size: .8rem;
@@ -495,11 +493,6 @@ section {
         color: var(--color-grey2);
         font-weight: 500;
         font-size: 1.2rem;
-      }
-    }
-    p {
-      span {
-        color: var(--color-grey3);
       }
     }
   }
@@ -530,7 +523,9 @@ section {
       img {
         width: 100%;
         height: 300px;
-        object-fit: cover;
+        object-fit: contain;
+
+        transition: all .37s ease-in-out;
       }
 
       .hover-item {
@@ -554,7 +549,7 @@ section {
       
       h3 {
         font-size: 1.5rem;
-        color: var(--color-white);
+        color: var(--font-color);
         margin-bottom: 1.5rem;
       }
 
@@ -565,7 +560,7 @@ section {
         gap: 2px;
 
         .icon {
-          background-color: var(--russian-violet);
+          background-color: var(--background-color);
           border-radius: 50%;
           width: 50px;
           height: 50px;
@@ -593,7 +588,7 @@ section {
             transition: var(--trasition-all);
           }
           &:hover {
-            background-color: var(--color-white);
+            background-color: var(--font-color);
             i {
               color: var(--github-hover);
             }
@@ -629,6 +624,9 @@ section {
   }
 }
 
+.portfolio .portfolio-item:hover .card-item img.techs {
+  visibility: hidden;
+}
 .portfolios .portfolio-item:hover .card-item .hover-item{
   opacity: 1;
   transform: scale(1);
@@ -686,8 +684,7 @@ section {
       a {
         display: flex;
         align-items: center;
-        color: var(--color-white);
-        background-color: var(--color-grey5);
+        background-color: var(--background-components-color);
         cursor: pointer;
         justify-content: center;
 
@@ -718,9 +715,9 @@ section {
         padding: .8rem 1.1rem;
         outline: none;
         border: none;
-        background-color: var(--color-grey5);
+        background-color: var(--background-components-color);
         width: 100%;
-        color: var(--color-white);
+        color: var(--font-color);
         resize: none;
       }
     }
@@ -745,7 +742,7 @@ section {
   height: 70px;
   border-radius: 50%;
   position: fixed;
-  background-color: var(--color-grey4);
+  background-color: var(--color-grey3);
   cursor: pointer;
 
   display: flex;
@@ -877,12 +874,12 @@ section {
       position: absolute;
       top: 50%;
       left: 50%;
-      color: var(--color-grey5);
+      color: var(--big-text-color);
       transition: var(--trasition-all);
       z-index: -1;
       transform: translate(-50%, -50%);
       font-weight: 800;
-      font-size: 6.3rem;
+      font-size: 6rem;
     }
   }
 }

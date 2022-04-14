@@ -1,0 +1,33 @@
+:root {
+	--russian-violet: #110424;
+	--color-secondary: #2dc586;
+  --turquoise: #25E4C7;
+  --sky-blue-cryola: #76E5FC;
+  --lavender-floral: #A882DD;
+  --words-collor: #FFFFFF;
+	--color-white: #FFFFFF;
+	--color-grey1: #dbe1e8;
+	--color-grey2: #b2becd;
+	--color-grey3: #6c7983;
+	--color-grey4: #454e56;
+	--color-grey5: #2a2e35;
+	--color-grey6: #12181b;
+  --border-grey5: 1px solid var(--color-grey5);
+  --border-green: 1px solid var(--color-secondary);
+	--br-sm-2: 14px;
+	--trasition-all: all .4s ease-in-out;
+	--box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3);
+  
+  --replit: brightness(100%) saturate(0%);
+  --replit-hover: brightness(0%) saturate(100%);
+  --github: #fff;
+  --github-hover: #000;
+}
+$background-color: #110424;
+$fonts-color1: #FFFFFF;
+$font-color2: #dbe1e8;
+$color-grey1: #dbe1e8;
+$color-grey2: #b2becd;
+$secondary-color: #2dc586;
+$turquoise: #25E4C7;
+$sky-blue-cryola: #76E5FC;
