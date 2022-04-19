@@ -42,25 +42,4 @@ function pageTransition() {
 
 pageTransition()
 
-// Send email SMTPjs service from stmpjs.com
 
-// const nome = document.getElementById("name").value
-// const email = document.getElementById('email-cont').value
-// const subject = document.getElementById("subject").value
-// const msg = document.getElementById("message").value
-
-
-
-// document.getElementById('formsend').onsubmit = event => {
-//   event.preventDefault()
-//   Email.send({
-//     SecureToken : "ef2544bc-6543-4e97-8ece-653ba0dc5a97",
-//     To: "ycss.v1@gmail.com",
-//     from: email,
-//     Subject: subject,
-//     Body: `Name: ${nome}\nEmail: ${email}\nContent: ${msg}`
-//   }).then (
-//     message => alert(message)
-//   ).catch(e => alert(e))
-//   reset()
-// }

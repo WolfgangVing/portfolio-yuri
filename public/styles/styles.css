@@ -27,6 +27,28 @@
   --github-hover: #000;
 }
 
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .light-mode {
   --background-color: #ffffff;
   --color-secondary: #F56692;
@@ -391,6 +413,7 @@ section {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 
 .about-stats .progress-bars .techs-right-cl .prog-ti-con {
@@ -619,8 +642,8 @@ section {
 .portfolios {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (minmax(230px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   gap: 2rem;
   margin-top: 3rem;
 }
@@ -644,6 +667,10 @@ section {
 
 .portfolios .portfolio-item .card-item {
   position: inherit;
+}
+
+.portfolios .portfolio-item .card-item #webtech {
+  padding: 10px 10px;
 }
 
 .portfolios .portfolio-item .card-item img {
@@ -740,6 +767,12 @@ section {
           filter: var(--replit);
   -webkit-transition: var(--trasition-all);
   transition: var(--trasition-all);
+  -webkit-animation: rotate infinite 0.8s linear;
+          animation: rotate infinite 0.8s linear;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 .portfolios .portfolio-item .card-item .icons .icon:hover {
@@ -753,9 +786,8 @@ section {
 .portfolios .portfolio-item .card-item .icons .icon:hover .replit-icon {
   -webkit-filter: var(--replit-hover);
           filter: var(--replit-hover);
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  filter: var(--replit-hover);
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
 
 .portfolios .portfolio-item .card-description {
