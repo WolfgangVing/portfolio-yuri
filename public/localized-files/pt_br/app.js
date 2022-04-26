@@ -54,7 +54,7 @@ function novoElement(tagName, className = undefined, options){
   return elem
 }
 
-function createProject(imageURL = [], projectTitle = '', catchphrase ,listOfIcons = ['github'], text = '') {
+function createProject(imageURL = [], projectTitle = '', catchphrase, listOfIcons = ['github'], text = '') {
 
   const portfolioItem = novoElement('div', 'portfolio-item')
   const cardItem = novoElement('div', 'card-item')
@@ -160,11 +160,11 @@ function createCertificate(status, titleName, spotlight, subtitle, dueDate, issu
   tlIconsCont.append(tlCertType, linkToCert)
   
   const issue = novoElement('p')
-  issue.innerHTML = `<span>Issued:</span> ${issuedBy}`
+  issue.innerHTML = `<span>Emitido:</span> ${issuedBy}`
 
   if(certificateId) {
     const id = novoElement(p)
-    id.innerHTML = `<span>Certificate Id:</span> ${certificateId}`
+    id.innerHTML = `<span>Certificado Id:</span> ${certificateId}`
     certficateCont.append(tlIconsCont, tlDueTime, title, issue, id)
     return certficateCont
   }

@@ -1,0 +1,59 @@
+{
+  "certificates": [
+    { 
+      "status": "unfinished",
+      "titleName": "Analysis and System Development",
+      "subtitle": "Wyden",
+      "spotlight": null,
+      "dueDate": "2021 - Present",
+      "issuedBy": "Currently through undergraduation, with conclusion expected to 06/2023.",
+      "certificateID": null,
+      "certificateType": "academic",
+      "certLink": null
+    },
+    {
+      "status": "finished",
+      "titleName": "REMOTE WORK AND VIRTUAL COLLABORATION",
+      "spotlight": "PROFESSIONAL CERTIFICATE",
+      "subtitle": "RWVCPC&trade",
+      "dueDate": "03/2022",
+      "issuedBy": "CertiProf&reg",
+      "certificateID": "74661563",
+      "certificateType": "certificate",
+      "certLink": ["googleDrive", "https://drive.google.com/file/d/1qSCG3eAAlgV2C5v4AH5wGMsa7NH_FE5H/view?usp=sharing"]
+    },
+    {
+      "status": "finished",
+      "titleName": "SCRUM FOUNDATION",
+      "spotlight": "PROFESSIONAL CERTIFICATE",
+      "subtitle": "SFPC&trade",
+      "dueDate": "01/2019",
+      "issuedBy": "CertiProf&reg",
+      "certificateID": "CLFQDDDPSV-QZLHVGGS-XMTTHSCXPW",
+      "certificateType": "certificado",
+      "certLink": ["googleDrive", "https://drive.google.com/file/d/1SZlNZrXTmMgrsX3JGQVbqR1f58YJAR7k/view?usp=sharing"]
+    },
+    {
+      "status": "finished",
+      "titleName": "EFSET ENGLISH CERTIFICATE 76/100",
+      "spotlight": "(C2PROFICIENT)",
+      "subtitle": "EF SET",
+      "dueDate": "04/2022",
+      "issuedBy": "EF English Standard Test",
+      "certificateID": null,
+      "certificateType": "certificado",
+      "certLink": ["googleDrive", "https://drive.google.com/file/d/16UjfJnZmR-jFEw7kCHu__KVxi_AnC3_t/view?usp=sharing"]
+    },
+    {
+      "status": "finished",
+      "titleName": "JAVASCRIPT ALGORITHMS AND",
+      "spotlight":"DATA STRUCTURES",
+      "subtitle": "DEVELOPER CERTIFICATE",
+      "dueDate": "04/2022",
+      "issuedBy": "freeCodeCamp",
+      "certificateID": null,
+      "certificateType": "certificado",
+      "certLink": ["freeCodeCamp", "https://www.freecodecamp.org/certification/yuricssilva/javascript-algorithms-and-data-structures"]
+    }
+  ]
+}

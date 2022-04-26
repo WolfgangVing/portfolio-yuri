@@ -1,0 +1,42 @@
+{
+  "projects": [
+    {
+      "imageURL": ["img/minha-stack-até-aqui.svg", "Node.js + Express"],
+      "catchphrase": "Microsservice",
+      "projectTitle": "Request Header Parser",
+      "listOfIcons": [
+        ["github", "https://github.com/WolfgangVing/boilerplate-project-headerparser"],
+        ["replit", "https://replit.com/@WolfgangVing/boilerplate-project-headerparser#.replit"]
+      ],
+      "text": "Captura o header do agente da requisição, filtra dados importantes e retorna o objeto json"
+    },
+    {
+      "imageURL": ["img/minha-stack-até-aqui.svg", "Node.js + Express"],
+      "catchphrase": "Microsservice",
+      "projectTitle": "Timestamp",
+      "listOfIcons": [
+        ["github", "https://github.com/WolfgangVing/boilerplate-project-timestamp"],
+        ["replit", "https://replit.com/@WolfgangVing/timestam-project-yurisilva#.replit"]
+      ],
+      "text": "Recebe uma requisição POST com uma data, e retorna a mesma em UNIX Epoch e UTC"
+    },
+    {
+      "imageURL": ["img/stack-node-express-mongodb-mongoose.svg", "Node.js, Express, MongoDB, Mongoose"],
+      "catchphrase": "Microsservice",
+      "projectTitle": "URL Shortener",
+      "listOfIcons": [
+        ["github", "https://github.com/WolfgangVing/boilerplate-project-urlshortener"],
+        ["replit", "https://replit.com/@WolfgangVing/boilerplate-project-urlshortener-2#server.js"]
+      ],
+      "text": "Encurta a URL, salva em um banco de dados MongoDB, se esta for passada redireciona para URL orginal"
+    },
+    {
+      "imageURL": ["img/html-css-js.svg", "HTML, CSS, Javascript"],
+      "catchphrase": "DOM \"game\"",
+      "projectTitle": "Flappy Bird",
+      "listOfIcons": [
+        ["github", "https://github.com/WolfgangVing/DOM-flappy-bird-project"]],
+      "text": "Uma abordagem do uso de DOM em um versão do Flappy Bird"
+    }
+  ]
+}
