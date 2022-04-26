@@ -1,0 +1,42 @@
+{
+  "projects": [
+    {
+      "imageURL": ["img/minha-stack-até-aqui.svg", "Node.js + Express"],
+      "catchphrase": "Microsservice",
+      "projectTitle": "Request Header Parser",
+      "listOfIcons": [
+        ["github", "https://github.com/WolfgangVing/boilerplate-project-headerparser"],
+        ["replit", "https://replit.com/@WolfgangVing/boilerplate-project-headerparser#.replit"]
+      ],
+      "text": "Capture the Header of the agent request, filter it and send back as response."
+    },
+    {
+      "imageURL": ["img/minha-stack-até-aqui.svg", "Node.js + Express"],
+      "catchphrase": "Microsservice",
+      "projectTitle": "Timestamp",
+      "listOfIcons": [
+        ["github", "https://github.com/WolfgangVing/boilerplate-project-timestamp"],
+        ["replit", "https://replit.com/@WolfgangVing/timestam-project-yurisilva#.replit"]
+      ],
+      "text": "Capture through an request query a date time then send a object with UNIX epoch and UTC date."
+    },
+    {
+      "imageURL": ["img/stack-node-express-mongodb-mongoose.svg", "Node.js, Express, MongoDB, Mongoose"],
+      "catchphrase": "Microsservice",
+      "projectTitle": "URL Shortener",
+      "listOfIcons": [
+        ["github", "https://github.com/WolfgangVing/boilerplate-project-urlshortener"],
+        ["replit", "https://replit.com/@WolfgangVing/boilerplate-project-urlshortener-2#server.js"]
+      ],
+      "text": "Shorten a URL then when used will redirect you to the original."
+    },
+    {
+      "imageURL": ["img/html-css-js.svg", "HTML, CSS, Javascript"],
+      "catchphrase": "DOM \"game\"",
+      "projectTitle": "Flappy Bird",
+      "listOfIcons": [
+        ["github", "https://github.com/WolfgangVing/DOM-flappy-bird-project"]],
+      "text": "Capture the Header of the agent request, filter it and send back as response."
+    }
+  ]
+}
