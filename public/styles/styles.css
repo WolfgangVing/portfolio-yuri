@@ -510,6 +510,33 @@ section {
   height: 40px;
 }
 
+.about-stats .progress-bars .techs-right-cl .prog-ti-con #react {
+  background-repeat: no-repeat;
+  background-image: url(icons/reactjs.svg);
+  background-position: center;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+}
+
+.about-stats .progress-bars .techs-right-cl .prog-ti-con #typescript {
+  background-repeat: no-repeat;
+  background-image: url(icons/typescript.svg);
+  background-position: center;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+}
+
+.about-stats .progress-bars .techs-right-cl .prog-ti-con #postgresql {
+  background-repeat: no-repeat;
+  background-image: url(icons/postgresql.svg);
+  background-position: center;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+}
+
 .stat-title {
   text-transform: uppercase;
   font-size: 1.4rem;

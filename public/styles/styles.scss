@@ -400,6 +400,30 @@ section {
           width: 40px;
           height: 40px;
         }
+        #react {
+          background-repeat: no-repeat;
+          background-image: url(icons/reactjs.svg);
+          background-position: center;
+          background-size: contain;
+          width: 40px;
+          height: 40px;
+        }
+        #typescript {
+          background-repeat: no-repeat;
+          background-image: url(icons/typescript.svg);
+          background-position: center;
+          background-size: contain;
+          width: 40px;
+          height: 40px;
+        }
+        #postgresql {
+          background-repeat: no-repeat;
+          background-image: url(icons/postgresql.svg);
+          background-position: center;
+          background-size: contain;
+          width: 40px;
+          height: 40px;
+        }
       }
     }
   }
